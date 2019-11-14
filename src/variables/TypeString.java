@@ -1,5 +1,7 @@
 package variables;
 
+import javax.sound.midi.Soundbank;
+
 public class TypeString {
     public static void  main (String[] args) {
         String text = "Dowolny napis 1 1.234";
@@ -18,8 +20,13 @@ public class TypeString {
         System.out.println(napis);
 
         String cite = "Być albo nie być!";
-        cite.replaceAll("ć","c");
-        System.out.println(cite);
+        String updatedCite = cite.replaceAll("ć","c");
+        System.out.println(updatedCite);
+
+        String name1 = "Ala";
+        String name2 = "ala";
+        System.out.println(name1.equals(name2)); // porównianie dwóch zmiennych
+        System.out.println(name1.length() >= name2.length());
 
     }
 }
