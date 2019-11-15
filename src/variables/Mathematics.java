@@ -13,5 +13,13 @@ public class Mathematics {
         System.out.println(result);
         // pierwiastek 3 stopnia z 16
         System.out.println(pow(8, (1.0/3)));
+
+        int a = 5;
+        int b = 8;
+
+        //wynik działania jest typu składników działania o najwyższej precyzji w działaniu
+        System.out.println(a*b);
+        //konwersja rozszerzająca
+        System.out.println((double)a /b);
     }
 }
