@@ -21,5 +21,12 @@ public class Mathematics {
         System.out.println(a*b);
         //konwersja rozszerzająca
         System.out.println((double)a /b);
+        // konwersja zarężająca -> konwersja do typu o niższej precyzji
+        double measure = 1.443;
+        System.out.println((int)measure);
+
+        char sign = 'a';
+        sign++; // sign += 1; lub sign = sign + 1
+        System.out.println(sign);
     }
 }
