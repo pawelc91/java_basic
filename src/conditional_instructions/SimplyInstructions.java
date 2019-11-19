@@ -1,6 +1,7 @@
 package conditional_instructions;
 
 import javax.swing.*;
+import java.time.LocalDate;
 import java.util.Locale;
 import java.util.Scanner;
 
@@ -41,5 +42,7 @@ public class SimplyInstructions {
         {
             System.out.println("Nieparzysta");
         }
+        // Generowanie daty aktualnej
+        System.out.println(LocalDate.now());
     }
 }
