@@ -1,6 +1,7 @@
 package oop;
 
 import javax.xml.namespace.QName;
+import java.sql.SQLOutput;
 
 // klasa główna - uruchumieniowa
 public class Main {
@@ -32,6 +33,8 @@ public class Main {
         double salaryGross = userOne.calculateSalaryGross();
         System.out.println("salaryGross = " + salaryGross);
         System.out.println("Calculated calary gross: " + userTwo.calculateSalaryGross());
+        System.out.println("===============================");
+        System.out.println(userThree.modifyUserParameters(15000,true));
     }
 
 }
