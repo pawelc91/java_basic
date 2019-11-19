@@ -2,6 +2,7 @@ package oop;
 
 import javax.xml.namespace.QName;
 import java.sql.SQLOutput;
+import java.util.Scanner;
 
 // klasa główna - uruchumieniowa
 public class Main {
@@ -35,6 +36,18 @@ public class Main {
         System.out.println("Calculated calary gross: " + userTwo.calculateSalaryGross());
         System.out.println("===============================");
         System.out.println(userThree.modifyUserParameters(15000,true));
+
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Wprowadź imię");
+        String name = scanner.nextLine();
+        System.out.println("Wprowadź nazwisko");
+        String lastName = scanner.nextLine();
+        System.out.println("Wprowadź płeć");
+        char gender = scanner.nextLine().charAt(0);
+        System.out.println("Wprowadź pensję");
+        double salary_net = scanner.nextDouble();
+        User userFour = new User(name, lastName, gender, true,salary_net);
+        userFour.printUser();
     }
 
 }
