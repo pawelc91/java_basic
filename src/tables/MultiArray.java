@@ -1,4 +1,5 @@
 package tables;
+import java.util.*;
 
 public class MultiArray {
     public static void main(String[] args) {
@@ -41,5 +42,37 @@ public class MultiArray {
         // 2. i = 1 | 1 < 3 -> true | i++
         // -> j = 0 | 0 < 5 -> true | j++    1  1  1
         //                                   2 ...
+        System.out.println(numbers[2][0]);
+//        System.out.println(numbers[2][10]); -> błąd ArrayIndexOutOfBoundsException
+
+        String tab [] = new String[5] ;
+        int tabInt [] = new int[5] ;
+        System.out.println(tab[1]);     // typy obiektowe są inicjalizowane null
+        System.out.println(tabInt[1]);  // typy podstawowe
+        // int -> 0
+        // double -> 0.0
+        // char = ''
+        // boolean -> false
+
+        List<String> names = new ArrayList<>(Arrays.asList("Ala","Ola","Ela"));
+        System.out.println(names);
+        System.out.println(names.size());
+        System.out.println(names.get(1));
+        names.remove("Ola");
+        System.out.println("==============");
+        System.out.println(names);
+        System.out.println(names.size());
+        System.out.println(names.get(1));
+        System.out.println("==============");
+        names.add("Jan");
+        System.out.println(names);
+        names.set(1,"Anna");
+        System.out.println(names);
+//        names.set(15, "Janusz"); -> błąd
+//        System.out.println(names);
+        String deleted = names.remove(1);
+        System.out.println("deleted = " + deleted);
+        System.out.println(names);
+
     }
 }
