@@ -20,5 +20,6 @@ public class InputData {
         System.out.printf("Skonsumowano: /n\n", enter);
         //zamknięcie połaczenia
         scanner.close();
+        System.out.println("TEST");
     }
 }
