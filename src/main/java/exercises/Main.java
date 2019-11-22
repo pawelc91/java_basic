@@ -1,8 +1,10 @@
 package exercises;
 
+import exercises.model.Auto;
+
 public class Main {
     public static void main(String[] args) {
-        double [] array = {2.5, 1, 5.5, 2};
+                double [] array = {2.5, 1, 5.5, 2};
         System.out.println(MathLibrary.avg(array));
 
         System.out.println(MathLibrary.power(2,4));
@@ -11,5 +13,7 @@ public class Main {
         System.out.println(MathLibrary.factorialR(5));
 
         System.out.println(MathLibrary.fiboSum(100));
+
+
     }
 }
