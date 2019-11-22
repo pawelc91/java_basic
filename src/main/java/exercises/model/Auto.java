@@ -18,6 +18,10 @@ public class Auto {
     private double price;
     private LocalDateTime dateAdded = LocalDateTime.now();
 
+    public Auto(LocalDateTime dateAdded) {
+        this.dateAdded = dateAdded;
+    }
+
     public String getBrand() {
         return brand;
     }
@@ -77,4 +81,4 @@ public class Auto {
         this.price = price;
     }
 }
-}
+

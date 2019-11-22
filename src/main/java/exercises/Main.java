@@ -1,19 +1,18 @@
 package exercises;
 
-import exercises.model.Auto;
+import exercises.model.Engine;
+import exercises.model.Fuel;
+import exercises.model.controller.AutoController;
 
+// Command line  Interface
 public class Main {
     public static void main(String[] args) {
-                double [] array = {2.5, 1, 5.5, 2};
-        System.out.println(MathLibrary.avg(array));
-
-        System.out.println(MathLibrary.power(2,4));
-
-        System.out.println(MathLibrary.factorial(5));
-        System.out.println(MathLibrary.factorialR(5));
-
-        System.out.println(MathLibrary.fiboSum(100));
-
-
+        AutoController ac = new AutoController();
+        //dodanie 3 aut do zamówienia
+        ac.addAuto("vw", "passat", Engine.v2_0, Fuel.diesel, 12000);
+        ac.addAuto("vw", "golf", Engine.v1_9, Fuel.diesel, 9000);
+        ac.addAuto("vw", "tiguan", Engine.v3_0, Fuel.hybrid, 18000);
+        // wypisz listę aut
+        ac.printAllAutos();
     }
 }
